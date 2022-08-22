@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   Privado:
     docker:
-      - image: gesellix/trufflehog
+      - image: ubuntu
     steps:
     - checkout
     - run:
