@@ -6,10 +6,10 @@ jobs:
     steps:
     - checkout
     - run:
-      name: install privado
-      command: |
-        git clone https://github.com/Privado-Inc/privado-cli.git
-        cd privado
+        name: install privado
+        command: |
+          git clone https://github.com/Privado-Inc/privado-cli.git
+          cd privado
   TruffleHog:
     docker:
       - image: gesellix/trufflehog
