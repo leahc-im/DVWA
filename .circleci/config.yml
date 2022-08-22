@@ -9,9 +9,10 @@ jobs:
         name: install privado
         command: |
           apt update
-          apt install -y git
-          git clone https://github.com/Privado-Inc/privado-cli.git
-          cd privado
+          apt install -y go
+          go install github.com/Privado-Inc/privado-cli@latest
+          privado scan /root/project > privadoResult
+          cat privadoResult
   TruffleHog:
     docker:
       - image: gesellix/trufflehog
