@@ -9,7 +9,7 @@ jobs:
         name: install privado
         command: |
           apt update
-          apt install -y curl
+          apt install -y curl docker docker-ce docker-ce-cli containerd.io docker-compose-plugin
           curl -o- https://raw.githubusercontent.com/Privado-Inc/privado-cli/main/install.sh | bash
           privado scan /root/project > privadoResult
           cat privadoResult
