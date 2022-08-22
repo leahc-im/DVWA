@@ -8,8 +8,7 @@ jobs:
     - run:
         name: install privado
         command: |
-          git clone https://github.com/Privado-Inc/privado-cli.git
-          cd privado
+          whoami
   TruffleHog:
     docker:
       - image: gesellix/trufflehog
