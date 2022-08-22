@@ -9,7 +9,7 @@ jobs:
         name: install privado
         command: |
           apt update
-          apt install -y go
+          apt install -y golang-go
           go install github.com/Privado-Inc/privado-cli@latest
           privado scan /root/project > privadoResult
           cat privadoResult
