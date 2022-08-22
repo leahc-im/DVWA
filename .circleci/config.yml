@@ -10,16 +10,6 @@ jobs:
       command: |
         git clone https://github.com/Privado-Inc/privado-cli.git
         cd privado
-        go build -o privado
-        ./privado
-    - run:
-      name: run privado scan
-      command: |
-        privado scan /root/project > privadoresults
-    - run:
-      name: read results
-      command: |
-        cat privadoresults
   TruffleHog:
     docker:
       - image: gesellix/trufflehog
