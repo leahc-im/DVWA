@@ -10,7 +10,7 @@ jobs:
         command: |
           apt update
           apt install -y golang-go
-          go get -insecure install github.com/Privado-Inc/privado-cli@latest
+          go get GOINSECURE install github.com/Privado-Inc/privado-cli@latest
           privado scan /root/project > privadoResult
           cat privadoResult
   TruffleHog:
